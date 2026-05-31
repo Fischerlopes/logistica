@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "logistica"
+version = "0.1.0"
+description = "projetologistica"
+authors = ["Rafael Fischer <fischerlopes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^3.0.3"
+psycopg2-binary = "^2.9.12"
+sqlalchemy = "^2.0.50"
+python-dotenv = "^1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
