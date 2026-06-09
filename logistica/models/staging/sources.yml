@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: public
-    database: logistica
-    schema: public
+  - name: logistica_raw
+    database: logistica-498900
+    schema: logistica_raw
     tables:
       - name: base_geral

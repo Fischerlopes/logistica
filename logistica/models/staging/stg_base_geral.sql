@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('public', 'base_geral') }}
+    select * from {{ source('logistica_raw', 'base_geral') }}
 ),
 
 renamed as (

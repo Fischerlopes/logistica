@@ -10,10 +10,10 @@ select
     tipo_pedido,
 
     -- datas principais
-    pedido_criado_em::timestamp      as pedido_criado_em,
-    coletado_em::timestamp           as coletado_em,
-    entregue_em::timestamp           as entregue_em,
-    entregue_em_real::timestamp      as entregue_em_real,
+    CAST(pedido_criado_em AS TIMESTAMP)   as pedido_criado_em,
+    CAST(coletado_em AS TIMESTAMP)        as coletado_em,
+    CAST(entregue_em AS TIMESTAMP)        as entregue_em,
+    CAST(entregue_em_real AS TIMESTAMP)   as entregue_em_real,
 
     -- centros pelos quais passou
     pds_codigo,
