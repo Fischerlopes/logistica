@@ -10,10 +10,10 @@ select
     tipo_pedido,
 
     -- datas principais
-    CAST(pedido_criado_em AS TIMESTAMP)   as pedido_criado_em,
-    CAST(coletado_em AS TIMESTAMP)        as coletado_em,
-    CAST(entregue_em AS TIMESTAMP)        as entregue_em,
-    CAST(entregue_em_real AS TIMESTAMP)   as entregue_em_real,
+   SAFE_CAST(pedido_criado_em AS TIMESTAMP)   as pedido_criado_em,
+    SAFE_CAST(coletado_em AS TIMESTAMP)        as coletado_em,
+    SAFE_CAST(entregue_em AS TIMESTAMP)        as entregue_em,
+    SAFE_CAST(entregue_em_real AS TIMESTAMP)   as entregue_em_real,
 
     -- centros pelos quais passou
     pds_codigo,
