@@ -12,6 +12,8 @@ psycopg2-binary = "^2.9.12"
 sqlalchemy = "^2.0.50"
 python-dotenv = "^1.2.2"
 dbt-postgres = "^1.10.0"
+google-cloud-bigquery = "^3.41.0"
+pandas-gbq = "^0.35.0"
 
 
 [build-system]
